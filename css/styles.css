@@ -431,6 +431,29 @@ section { padding: clamp(4.5rem, 10vw, 7.5rem) 0; }
 html.js .reveal { opacity: 0; will-change: transform, opacity; }
 html.js .reveal.is-in { will-change: auto; }
 
+/* ---------- 404 ---------- */
+.page-404 .topbar { position: fixed; }
+.error-page {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--bar-h) + 3rem) 0 4rem;
+  background: var(--bg);
+}
+.error-inner { max-width: 36rem; }
+.error-code {
+  font-size: clamp(4rem, 14vw, 7rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: var(--fill-strong);
+  margin-bottom: 1.25rem;
+  font-variant-numeric: tabular-nums;
+}
+.error-page .display { max-width: 16ch; }
+.error-page .lede { margin-top: 1rem; }
+.error-page .hero-actions { margin-top: 2rem; }
+
 /* ---------- Preference fallbacks (§14) ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Page not found — T Tek</title>
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+<link rel="icon" href="/assets/logo.png">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="page-404">
+
+<header class="topbar is-scrolled" id="topbar">
+  <div class="wrap topbar-inner">
+    <a href="/" class="logo" aria-label="T Tek — home">
+      <img src="/assets/logo.png" alt="" width="34" height="34">
+      <span>T Tek</span>
+    </a>
+    <div class="topbar-actions">
+      <div class="segmented" id="langToggle" role="radiogroup" aria-label="Language">
+        <span class="segmented-thumb" aria-hidden="true"></span>
+        <button type="button" class="seg" role="radio" data-lang="en" aria-checked="true">EN</button>
+        <button type="button" class="seg" role="radio" data-lang="da" aria-checked="false">DA</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="error-page">
+  <div class="wrap error-inner">
+    <p class="error-code" aria-hidden="true">404</p>
+    <h1 class="display" data-i18n="error.title">This page isn’t here.</h1>
+    <p class="lede" data-i18n="error.sub">The link may be broken, or the page may have moved. Let’s get you back on track.</p>
+    <div class="hero-actions">
+      <a href="/" class="btn btn-primary btn-lg" data-i18n="error.home">Back to home</a>
+      <a href="/#contact" class="btn btn-quiet btn-lg" data-i18n="error.contact">Contact</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-row">
+    <span data-i18n="footer.copy">T Tek © 2026</span>
+    <span class="footer-loc">Vejle, DK</span>
+  </div>
+</footer>
+
+<script src="/js/i18n.js"></script>
+<script>
+(function () {
+  var i18n = window.TT && window.TT.i18n;
+  if (!i18n) return;
+
+  var seg = document.getElementById('langToggle');
+  var thumb = seg.querySelector('.segmented-thumb');
+  var btns = Array.prototype.slice.call(seg.querySelectorAll('.seg'));
+
+  function layoutThumb() {
+    var lang = i18n.current;
+    var btn = btns.filter(function (b) { return b.getAttribute('data-lang') === lang; })[0];
+    if (!btn) return;
+    var sr = seg.getBoundingClientRect(), br = btn.getBoundingClientRect();
+    thumb.style.width = br.width + 'px';
+    thumb.style.transform = 'translate3d(' + (br.left - sr.left) + 'px,0,0)';
+  }
+
+  function sync() {
+    btns.forEach(function (b) {
+      b.setAttribute('aria-checked', b.getAttribute('data-lang') === i18n.current ? 'true' : 'false');
+    });
+    document.title = i18n.t('error.docTitle');
+    layoutThumb();
+  }
+
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      i18n.apply(b.getAttribute('data-lang'));
+      sync();
+    });
+  });
+
+  i18n.apply(i18n.detect());
+  sync();
+  window.addEventListener('resize', layoutThumb);
+})();
+</script>
+</body>
+</html>

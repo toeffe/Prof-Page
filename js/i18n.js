@@ -38,7 +38,12 @@
       'contact.err.name': 'Please enter your name.', 'contact.err.email': 'Enter a valid email address.', 'contact.err.details': 'Tell me a little about the project.',
       'contact.sent': 'Your mail client should open now.',
       'contact.emailLabel': 'EMAIL', 'contact.phoneLabel': 'PHONE', 'contact.locationLabel': 'LOCATION', 'contact.responseLabel': 'RESPONSE TIME',
-      'footer.copy': 'T Tek © 2026'
+      'footer.copy': 'T Tek © 2026',
+      'error.docTitle': 'Page not found — T Tek',
+      'error.title': 'This page isn\u2019t here.',
+      'error.sub': 'The link may be broken, or the page may have moved. Let\u2019s get you back on track.',
+      'error.home': 'Back to home',
+      'error.contact': 'Contact'
     },
     da: {
       'nav.services': 'Ydelser', 'nav.process': 'Proces', 'nav.work': 'Arbejde', 'nav.contact': 'Kontakt', 'nav.cta': 'Start et projekt',
@@ -75,7 +80,12 @@
       'contact.err.name': 'Skriv dit navn.', 'contact.err.email': 'Indtast en gyldig e-mailadresse.', 'contact.err.details': 'Fortæl lidt om projektet.',
       'contact.sent': 'Dit mailprogram burde åbne nu. Gør det ikke, så skriv til MathiasTJ@outlook.com.',
       'contact.emailLabel': 'E-MAIL', 'contact.phoneLabel': 'TELEFON', 'contact.locationLabel': 'LOKATION', 'contact.responseLabel': 'SVARTID',
-      'footer.copy': 'T Tek © 2026'
+      'footer.copy': 'T Tek © 2026',
+      'error.docTitle': 'Siden findes ikke — T Tek',
+      'error.title': 'Denne side er her ikke.',
+      'error.sub': 'Linket kan være i stykker, eller siden er flyttet. Lad os få dig tilbage.',
+      'error.home': 'Til forsiden',
+      'error.contact': 'Kontakt'
     }
   };
 
