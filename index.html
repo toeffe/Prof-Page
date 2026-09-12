@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>T Tek — From Idea to Finished Product</title>
+<meta name="description" content="T Tek is an independent software consultancy building automation tools and business software from idea to finished product.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <div class="wrap topbar-inner">
+    <a href="#hero" class="logo" aria-label="T Tek — home">
+      <img src="assets/logo.png" alt="" width="34" height="34">
+      <span>T Tek</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services" data-i18n="nav.services" data-press>Services</a></li>
+        <li><a href="#process" data-i18n="nav.process" data-press>Process</a></li>
+        <li><a href="#work" data-i18n="nav.work" data-press>Work</a></li>
+        <li><a href="#contact" data-i18n="nav.contact" data-press>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="topbar-actions">
+      <div class="segmented" id="langToggle" role="radiogroup" aria-label="Language">
+        <span class="segmented-thumb" aria-hidden="true"></span>
+        <button type="button" class="seg" role="radio" data-lang="en" aria-checked="true" data-press>EN</button>
+        <button type="button" class="seg" role="radio" data-lang="da" aria-checked="false" data-press>DA</button>
+      </div>
+      <a href="#contact" class="btn btn-primary topbar-cta" data-i18n="nav.cta" data-press>Start a project</a>
+      <button type="button" class="icon-btn menu-btn" id="menuBtn" aria-haspopup="dialog" aria-expanded="false" data-i18n-aria="nav.menu" aria-label="Menu" data-press>
+        <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="hero" class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow"><span class="pulse" aria-hidden="true"></span><span data-i18n="hero.eyebrow">Available for new projects</span></span>
+      <h1 class="display" data-i18n="hero.title">From idea to finished product.</h1>
+      <p class="lede" data-i18n="hero.sub">
+        T Tek is an independent software consultancy. I take a project
+        from a rough idea through design, build, and launch — one point of contact,
+        start to finish.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-lg" data-i18n="hero.cta1" data-press>Book a call</a>
+        <a href="#work" class="btn btn-quiet btn-lg" data-i18n="hero.cta2" data-press>See the work</a>
+      </div>
+      <dl class="hero-proof">
+        <div><dt>3</dt><dd data-i18n="hero.proof1">projects shipped</dd></div>
+        <div><dt>6</dt><dd data-i18n="hero.proof2">years building software</dd></div>
+        <div><dt>2</dt><dd data-i18n="hero.proof3">industries served</dd></div>
+      </dl>
+    </div>
+
+    <div class="stepper card reveal" id="heroStepper" aria-label="Project stages">
+      <ol class="stepper-list">
+        <li class="step"><span class="step-n"><span class="step-num">1</span><svg class="step-check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="hero.step1">Describe — scope the actual problem</span></li>
+        <li class="step"><span class="step-n"><span class="step-num">2</span><svg class="step-check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="hero.step2">Design — plan the build</span></li>
+        <li class="step"><span class="step-n"><span class="step-num">3</span><svg class="step-check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="hero.step3">Build — working software, iteratively</span></li>
+        <li class="step"><span class="step-n"><span class="step-num">4</span><svg class="step-check" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="hero.step4">Implement — deployed into the real workflow</span></li>
+      </ol>
+      <div class="stepper-track" aria-hidden="true"><span class="stepper-fill"></span></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust band reveal">
+  <div class="wrap trust-inner">
+    <span class="mono-label" data-i18n="trust.label">Work delivered for</span>
+    <div class="trust-logos"><span>Nagel-Group</span></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="mono-label accent" data-i18n="services.eyebrow">Services</span>
+      <h2 class="title" data-i18n="services.title">What I do</h2>
+      <p class="sec-desc" data-i18n="services.desc">Custom software and automation tools, built around a real workflow rather than a generic template.</p>
+    </header>
+
+    <div class="bento">
+      <article class="card bento-card lg reveal">
+        <div class="bento-icon">01</div>
+        <h3>Arkiv</h3>
+        <p data-i18n="services.arkiv">Document intelligence pipeline — automated processing and archiving of incoming documents, with OCR and structured extraction built in.</p>
+        <ul class="bento-list">
+          <li data-i18n="services.arkiv.li1">Automated document intake</li>
+          <li data-i18n="services.arkiv.li2">OCR &amp; structured data extraction</li>
+          <li data-i18n="services.arkiv.li3">Production-ready pipelines</li>
+        </ul>
+      </article>
+      <article class="card bento-card reveal">
+        <div class="bento-icon">02</div>
+        <h3>Autorep (ETA Bot)</h3>
+        <p data-i18n="services.autorep">Automated ETA lookup for inbound email requests. Reads .msg/.txt emails, extracts shipment references, matches them against a booking workbook, and writes reply-ready JSON for downstream automation such as Power Automate.</p>
+      </article>
+      <article class="card bento-card reveal">
+        <div class="bento-icon">03</div>
+        <h3>Emballage</h3>
+        <p data-i18n="services.emballage">Processes and analyzes pallet shipment data with — works across multiple Excel formats, generates professional reports, and handles different customer types.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="band">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="mono-label accent" data-i18n="process.eyebrow">Process</span>
+      <h2 class="title" data-i18n="process.title">How a project runs</h2>
+    </header>
+    <ol class="process">
+      <li class="process-step reveal">
+        <span class="mono-label accent">01</span>
+        <h4 data-i18n="process.s1.h">Describe</h4>
+        <p data-i18n="process.s1.p">Walk through the actual problem and the current workflow before anything gets built.</p>
+      </li>
+      <li class="process-step reveal">
+        <span class="mono-label accent">02</span>
+        <h4 data-i18n="process.s2.h">Design</h4>
+        <p data-i18n="process.s2.p">Plan the solution — what it needs to do, and what it deliberately won’t.</p>
+      </li>
+      <li class="process-step reveal">
+        <span class="mono-label accent">03</span>
+        <h4 data-i18n="process.s3.h">Build</h4>
+        <p data-i18n="process.s3.p">Development happens iteratively, with working software to review along the way.</p>
+      </li>
+      <li class="process-step reveal">
+        <span class="mono-label accent">04</span>
+        <h4 data-i18n="process.s4.h">Implement</h4>
+        <p data-i18n="process.s4.p">Deployed into the real workflow it was built for, not just handed off as a file.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="mono-label accent" data-i18n="work.eyebrow">Selected work</span>
+      <h2 class="title" data-i18n="work.title">A few things we’ve built</h2>
+      <p class="sec-desc" data-i18n="work.desc">Three projects, shown here as proof of capability.</p>
+    </header>
+
+    <ul class="work-list">
+      <li class="reveal">
+        <button type="button" class="work-row" data-project="arkiv" data-press>
+          <span class="work-body">
+            <span class="work-name">Arkiv</span>
+            <span class="work-desc" data-i18n="work.arkiv">Document intelligence pipeline — automated processing and archiving with OCR built in.</span>
+            <span class="work-tags"><span class="tag">Python</span><span class="tag">OCR</span><span class="tag" data-i18n="tag.automation">Automation</span></span>
+          </span>
+          <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+      </li>
+      <li class="reveal">
+        <button type="button" class="work-row" data-project="autorep" data-press>
+          <span class="work-body">
+            <span class="work-name">Autorep (ETA Bot)</span>
+            <span class="work-desc" data-i18n="work.autorep">Reads inbound shipment emails, looks up ETAs against a booking workbook, and writes reply-ready output for automation tools like Power Automate.</span>
+            <span class="work-tags"><span class="tag" data-i18n="tag.automation">Automation</span><span class="tag" data-i18n="tag.email">Email Parsing</span><span class="tag">Excel</span></span>
+          </span>
+          <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+      </li>
+      <li class="reveal">
+        <button type="button" class="work-row" data-project="emballage" data-press>
+          <span class="work-body">
+            <span class="work-name">Emballage</span>
+            <span class="work-desc" data-i18n="work.emballage">Processes and analyzes pallet shipment data across multiple Excel formats, with professional report generation and per-customer handling.</span>
+            <span class="work-tags"><span class="tag">Excel</span><span class="tag" data-i18n="tag.reporting">Reporting</span><span class="tag" data-i18n="tag.logistics">Logistics</span></span>
+          </span>
+          <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="band">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="mono-label accent" data-i18n="contact.eyebrow">Contact</span>
+      <h2 class="title" data-i18n="contact.title">Let’s talk about your project</h2>
+    </header>
+    <div class="contact-grid">
+      <form class="card contact-card reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="fName" data-i18n="contact.name">Name</label>
+          <input id="fName" name="name" type="text" autocomplete="name" required data-i18n-placeholder="contact.name.ph" placeholder="Your name" aria-describedby="fNameErr">
+          <p class="field-err" id="fNameErr" role="alert" data-i18n="contact.err.name" hidden>Please enter your name.</p>
+        </div>
+        <div class="field">
+          <label for="fEmail" data-i18n="contact.email">Email</label>
+          <input id="fEmail" name="email" type="email" autocomplete="email" required placeholder="you@company.com" aria-describedby="fEmailErr">
+          <p class="field-err" id="fEmailErr" role="alert" data-i18n="contact.err.email" hidden>Enter a valid email address.</p>
+        </div>
+        <div class="field">
+          <label for="fDetails" data-i18n="contact.details">Project details</label>
+          <textarea id="fDetails" name="details" rows="4" required data-i18n-placeholder="contact.details.ph" placeholder="A few lines about what you're building" aria-describedby="fDetailsErr"></textarea>
+          <p class="field-err" id="fDetailsErr" role="alert" data-i18n="contact.err.details" hidden>Tell me a little about the project.</p>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block" type="submit" data-i18n="contact.send" data-press>Send message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite" data-i18n="contact.sent" hidden>Your mail client should open now.</p>
+      </form>
+      <dl class="contact-info reveal">
+        <div><dt class="mono-label" data-i18n="contact.emailLabel">EMAIL</dt><dd><a href="mailto:MathiasTJ@outlook.com">MathiasTJ@outlook.com</a></dd></div>
+      <!-- <div><dt class="mono-label" data-i18n="contact.phoneLabel">PHONE</dt><dd><a href="tel:+4520111111">+45 20 11 11 11</a></dd></div> -->
+        <div><dt class="mono-label" data-i18n="contact.locationLabel">LOCATION</dt><dd>Vejle, Danmark</dd></div>
+        <div><dt class="mono-label" data-i18n="contact.responseLabel">RESPONSE TIME</dt><dd>48h</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-row">
+    <span data-i18n="footer.copy">T Tek © 2026</span>
+    <span class="footer-loc">Vejle, Danmark</span>
+  </div>
+</footer>
+
+<!-- Bottom sheet (mobile nav + project details). Content injected by js/main.js -->
+<div class="sheet-root" id="sheetRoot" hidden>
+  <div class="sheet-scrim" id="sheetScrim"></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" tabindex="-1">
+    <div class="sheet-grabber" aria-hidden="true"><span></span></div>
+    <div class="sheet-head">
+      <h2 class="sheet-title" id="sheetTitle"></h2>
+      <button type="button" class="icon-btn sheet-close" id="sheetClose" data-i18n-aria="sheet.close" aria-label="Close" data-press>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="sheet-body" id="sheetBody"></div>
+  </div>
+</div>
+
+<script src="js/spring.js"></script>
+<script src="js/gestures.js"></script>
+<script src="js/sheet.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
